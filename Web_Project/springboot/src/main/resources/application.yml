@@ -1,0 +1,20 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/final?
+    username: root
+    password: add20020502
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml #扫描所有mybatis的xml文件，classpath表示resource路径
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #在控制台上显示执行的sql操作
+
+files:
+  upload:
+    path: E:/企业级应用开发/8008120363-汪晨-期末大作业/finalhomework/files/ #文件上传和下载位置
